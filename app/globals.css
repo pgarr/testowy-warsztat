@@ -23,4 +23,79 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.toolbar {
+  height: 43px;
+  background: #121112;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 20px;
+}
+
+.toolbar-left {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  font-family: var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-weight: 400;
+  font-size: 20px;
+  color: #F7F7F7;
+}
+
+.toolbar-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toolbar-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.toolbar .toolbar-links {
+  display: flex;
+  gap: 112px;
+  align-items: center;
+}
+
+.toolbar a {
+  color: #F7F7F7;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.toolbar-link.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.hero-wrap {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.hero-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  width: auto;
+  pointer-events: none;
+  z-index: 10;
 }
