@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Toolbar from "./Toolbar";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -31,15 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
-      >
+      <body className={`${inter.variable} antialiased`}>
         <Toolbar />
-        <div className="hero-wrap">
-          <img src="/hero.png" className="hero-image" alt="Hero" />
-          <img src="/logo.svg" className="hero-logo" alt="Logo" />
+          <div className="hero-wrap">
+            <img src="/hero.png" className="hero-image" alt="Hero" />
+            <img src="/logo.svg" className="hero-logo" alt="Logo" />
+          </div>
+        <div className="page-content">
+          {children}
         </div>
-        {children}
       </body>
     </html>
   );

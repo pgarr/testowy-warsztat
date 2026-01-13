@@ -1,22 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #F7F7F7;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --toolbar-background: #121112;
+  --toolbar-text: #F7F7F7;
 }
 
 body {
@@ -28,7 +17,7 @@ body {
 
 .toolbar {
   height: 43px;
-  background: #121112;
+  background: var(--toolbar-background);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +31,7 @@ body {
   font-family: var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   font-weight: 400;
   font-size: 20px;
-  color: #F7F7F7;
+  color: var(--toolbar-text);
 }
 
 .toolbar-info {
@@ -63,7 +52,7 @@ body {
 }
 
 .toolbar a {
-  color: #F7F7F7;
+  color: var(--toolbar-text);
   text-transform: uppercase;
   font-weight: 700;
   font-family: var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
@@ -98,4 +87,70 @@ body {
   width: auto;
   pointer-events: none;
   z-index: 10;
+}
+
+.page-content {
+  margin: 0 150px;
+}
+
+h1 {
+  font-size: 65px;
+  font-family: 'Istok Web', var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  column-gap: 50px; 
+  row-gap: 60px; 
+  padding: 24px;
+}
+
+.service-card {
+  width: 400px;
+  height: 500px;
+  box-sizing: border-box;
+  background: #EDEDED;
+  border: 7px solid #38023B;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.service-card__photo {
+  height: 50%; 
+  min-height: 250px; 
+  overflow: hidden;
+}
+
+.service-card__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-card__content {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.service-card__title {
+  text-align: center;
+  font-family: var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
