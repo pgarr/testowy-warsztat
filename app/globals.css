@@ -6,6 +6,8 @@
   --foreground: #171717;
   --toolbar-background: #121112;
   --toolbar-text: #F7F7F7;
+  --card-background: #EDEDED;
+  --card-border: #38023B;
 }
 
 body {
@@ -117,8 +119,8 @@ h1 {
   width: 400px;
   height: 500px;
   box-sizing: border-box;
-  background: #EDEDED;
-  border: 7px solid #38023B;
+  background: var(--card-background);
+  border: 7px solid var(--card-border);
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -153,4 +155,72 @@ h1 {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+.service-card {
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: 500px;
+  height: 600px;
+  background-color: var(--card-background);
+  border-radius: 25px;
+  border: 7px solid var(--card-border);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal__image {
+  height: calc(600px / 3);
+  overflow: hidden;
+  width: 100%;
+}
+
+.modal__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal__content {
+  flex: 1;
+  padding: 30px 25px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__title {
+  font-family: var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.5px;
+}
+
+.modal__description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--foreground);
+  margin: 0;
 }
