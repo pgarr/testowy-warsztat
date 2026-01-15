@@ -8,7 +8,7 @@ export default function KontaktPage() {
         style={{ border: 0 }} 
         loading="lazy" 
         allowFullScreen
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJXyrnqkBbBEcRHx3MIweKRog&key=AIzaSyD5LnCqZaGSvxBCrZMWHb5j13l9f71druQ"
+        src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJXyrnqkBbBEcRHx3MIweKRog&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`}
       />
     </main>
   );
