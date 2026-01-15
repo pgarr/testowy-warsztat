@@ -6,8 +6,8 @@
   --foreground: #171717;
   --toolbar-background: #121112;
   --toolbar-text: #F7F7F7;
-  --card-background: #EDEDED;
-  --card-border: #38023B;
+  --card-background: #F7F7F7;
+  --card-border: #bdbdbd;
 }
 
 body {
@@ -74,12 +74,6 @@ body {
   margin: 0;
 }
 
-.hero-wrap {
-  position: relative;
-  width: 100%;
-  line-height: 0;
-}
-
 .hero-logo {
   position: absolute;
   left: 50%;
@@ -89,10 +83,6 @@ body {
   width: auto;
   pointer-events: none;
   z-index: 10;
-}
-
-.page-content {
-  margin: 0 150px;
 }
 
 h1 {
@@ -115,37 +105,15 @@ h1 {
   padding: 24px;
 }
 
+.service-container {
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 25px;
+}
+
 .service-card {
   width: 400px;
   height: 500px;
-  box-sizing: border-box;
-  background: var(--card-background);
-  border: 7px solid var(--card-border);
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.service-card__photo {
-  height: 50%; 
-  min-height: 250px; 
-  overflow: hidden;
-}
-
-.service-card__photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.service-card__content {
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 12px;
 }
 
 .service-card__title {
@@ -156,65 +124,15 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-.service-card {
-  cursor: pointer;
-}
 
 .modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
 }
 
 .modal {
   width: 500px;
   height: 600px;
-  background-color: var(--card-background);
-  border-radius: 25px;
-  border: 7px solid var(--card-border);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.modal__image {
-  height: calc(600px / 3);
-  overflow: hidden;
-  width: 100%;
-}
-
-.modal__image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.modal__content {
-  flex: 1;
-  padding: 30px 25px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.modal__title {
-  font-family: var(--font-inter), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  font-weight: 700;
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 0 20px 0;
-  letter-spacing: 0.5px;
 }
 
 .modal__description {

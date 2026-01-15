@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Toolbar from "./Toolbar";
+import Toolbar from "./components/Toolbar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,11 +23,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <Toolbar />
-          <div className="hero-wrap">
+          <div className="relative w-full">
             <img src="/hero.png" className="hero-image" alt="Hero" />
             <img src="/logo.svg" className="hero-logo" alt="Logo" />
           </div>
-        <div className="page-content">
+        <div className="mx-40">
           {children}
         </div>
       </body>
