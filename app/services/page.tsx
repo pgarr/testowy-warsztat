@@ -1,22 +1,20 @@
 import ServiceCard from "../components/ServiceCard";
-
-const TITLES = [
-  "oleje i filtry",
-  "zawieszenie i układ hamulcowy",
-  "diagnostyka i naprawa",
-  "przegląd przed zakupem",
-  "dobór i wymiana opon",
-];
+import { ServicesData } from "../data";
 
 export default function ServicesPage() {
-  return (
-    <main style={{ padding: 24 }}>
-      <h1>Zakres usług</h1>
-      <div className="services-grid">
-        {TITLES.map((t) => (
-          <ServiceCard key={t} title={t} />
-        ))}
-      </div>
-    </main>
-  );
+	return (
+		<main style={{ padding: 24 }}>
+			<h1>Zakres usług</h1>
+			<div className="services-grid">
+				{ServicesData.map((t) => (
+					<ServiceCard
+						key={t.title}
+						title={t.title}
+						imageUrl={t.imageUrl}
+						description={t.description}
+					/>
+				))}
+			</div>
+		</main>
+	);
 }
