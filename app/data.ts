@@ -30,3 +30,9 @@ export const ServicesData = [
 			"Właściwie dobrane opony mają bezpośredni wpływ na bezpieczeństwo, przyczepność i komfort jazdy, niezależnie od pory roku. Opony dostosowane do warunków atmosferycznych skracają drogę hamowania i poprawiają stabilność pojazdu. W naszym warsztacie pomagamy dobrać opony odpowiednie do modelu samochodu, stylu jazdy oraz sezonu. Zapewniamy fachową wymianę, wyważanie i kontrolę stanu ogumienia. Dbamy o precyzję i odpowiednie momenty dokręcania, aby zagwarantować bezpieczeństwo na drodze. Regularna kontrola opon to inwestycja w pewność prowadzenia i spokojną jazdę.",
 	},
 ];
+
+export const AboutData = [
+	"Jesteśmy nowoczesnym warsztatem samochodowym, który od lat łączy pasję do motoryzacji z rzetelną wiedzą techniczną i najwyższymi standardami obsługi klienta. Nasz zespół tworzą doświadczeni mechanicy, dla których precyzja, odpowiedzialność i ciągłe doskonalenie umiejętności są codziennością. Dzięki wieloletniej praktyce oraz regularnym szkoleniom jesteśmy w stanie skutecznie diagnozować i naprawiać zarówno samochody osobowe, jak i dostawcze – niezależnie od marki czy rocznika.",
+	"Stawiamy na profesjonalizm na każdym etapie współpracy. Korzystamy z nowoczesnego sprzętu diagnostycznego oraz sprawdzonych technologii, co pozwala nam szybko identyfikować usterki i proponować optymalne rozwiązania. Zawsze jasno informujemy o zakresie prac i kosztach, ponieważ uczciwość i transparentność są dla nas fundamentem zaufania.",
+	"Rozumiemy, jak ważna jest niezawodność pojazdu w codziennym życiu, dlatego każdą naprawę traktujemy z najwyższą starannością. Naszym celem jest nie tylko usunięcie problemu, ale także długofalowe bezpieczeństwo i komfort jazdy naszych klientów. Wybierając nasz warsztat, zyskujesz pewność, że Twoje auto trafia w ręce specjalistów, którzy naprawdę znają się na swojej pracy i traktują ją z pełnym zaangażowaniem.",
+];
