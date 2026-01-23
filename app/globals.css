@@ -51,17 +51,6 @@ body {
   text-decoration-thickness: 2px;
 }
 
-.hero-logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 80px;
-  width: auto;
-  pointer-events: none;
-  z-index: 10;
-}
-
 h1 {
   font-size: 48px;
   font-family: var(--font-geist-mono), monospace;

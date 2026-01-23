@@ -31,7 +31,11 @@ export default function RootLayout({
 				<Toolbar />
 				<div className="relative w-full">
 					<img src="/hero.png" className="m-0 block h-auto w-full" alt="Hero" />
-					<img src="/logo.svg" className="hero-logo" alt="Logo" />
+					<img
+						src="/logo.svg"
+						className="pointer-events-none absolute top-4 left-4 z-10 h-20 w-auto"
+						alt="Logo"
+					/>
 				</div>
 				<main className="px-3 md:mx-20 lg:mx-40">{children}</main>
 			</body>
