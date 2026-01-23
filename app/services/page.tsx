@@ -3,9 +3,9 @@ import { ServicesData } from "../data";
 
 export default function ServicesPage() {
 	return (
-		<main style={{ padding: 24 }}>
-			<h1>Zakres usług</h1>
-			<div className="services-grid">
+		<>
+			<h1>Usługi</h1>
+			<div className="services-grid flex flex-wrap justify-center gap-8">
 				{ServicesData.map((t) => (
 					<ServiceCard
 						key={t.title}
@@ -15,6 +15,6 @@ export default function ServicesPage() {
 					/>
 				))}
 			</div>
-		</main>
+		</>
 	);
 }

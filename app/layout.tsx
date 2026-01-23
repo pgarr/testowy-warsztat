@@ -27,13 +27,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${inter.variable} ${geistMono.variable} antialiased`}>
+			<body className={`${inter.variable} ${geistMono.variable} text-sm antialiased md:text-base`}>
 				<Toolbar />
 				<div className="relative w-full">
 					<img src="/hero.png" className="m-0 block h-auto w-full" alt="Hero" />
 					<img src="/logo.svg" className="hero-logo" alt="Logo" />
 				</div>
-				<div className="mx-40">{children}</div>
+				<main className="px-3 md:mx-20 lg:mx-40">{children}</main>
 			</body>
 		</html>
 	);

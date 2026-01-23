@@ -10,8 +10,8 @@ export default function Toolbar() {
 	const linkClass = (path: string) => `${pathname === path ? "underline decoration-2" : ""}`;
 
 	return (
-		<nav className="toolbar">
-			<div className="toolbar-left">
+		<nav className="toolbar flex flex-col items-center px-3 md:flex-row md:justify-between md:px-5 lg:px-10">
+			<div className="toolbar-left flex w-full flex-1 flex-row gap-4">
 				<span className="toolbar-info">
 					<CalendarIcon className="toolbar-icon" aria-hidden />
 					<span>PN-PT 8-16</span>
@@ -21,9 +21,9 @@ export default function Toolbar() {
 					<span>+48 XXX XXX XXX</span>
 				</span>
 			</div>
-			<div className="toolbar-links">
+			<div className="flex w-full flex-1 flex-row items-center justify-end gap-10 md:justify-center md:gap-15 lg:gap-20">
 				<Link href="/services" className={linkClass("/services")}>
-					Zakres usług
+					Usługi
 				</Link>
 				<Link href="/about" className={linkClass("/about")}>
 					O nas
