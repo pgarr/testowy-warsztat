@@ -45,3 +45,8 @@ coverage/
 
 # Vercel/Now
 .vercel
+
+# Firebase
+.firebaserc
+firebase-debug.log
+.firebase
