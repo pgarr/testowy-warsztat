@@ -37,7 +37,7 @@ export default function RootLayout({
 						alt="Logo"
 					/>
 				</div>
-				<main className="px-3 md:mx-20 lg:mx-40">{children}</main>
+				<main className="mx-10 md:mx-20 lg:mx-40">{children}</main>
 			</body>
 		</html>
 	);
