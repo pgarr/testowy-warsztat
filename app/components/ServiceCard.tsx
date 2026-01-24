@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type Props = {
 	title: string;
@@ -10,6 +10,15 @@ type Props = {
 
 export default function ServiceCard({ title, imageUrl, description }: Props) {
 	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	useEffect(() => {
+		if (isModalOpen) {
+			document.body.style.overflow = "hidden";
+		}
+		return () => {
+			document.body.style.overflow = "";
+		};
+	}, [isModalOpen]);
 
 	return (
 		<>
